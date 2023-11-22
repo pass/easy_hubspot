@@ -10,9 +10,9 @@ module EasyHubspot
       #   Client.do_get(list_id_endpoint(list_id), headers)
       # end
 
-      # def get_lists
-      #   Client.do_get(LIST_ENDPOINT, headers)
-      # end
+      def get_lists
+        Client.do_get(LIST_ENDPOINT, headers)
+      end
 
       # def create_list(body)
       #   Client.do_post(LIST_ENDPOINT, body, headers)
