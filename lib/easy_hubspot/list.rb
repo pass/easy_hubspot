@@ -28,7 +28,7 @@ module EasyHubspot
 
       def create_list_membership(list_id, body)
         membership_endpoint = "#{list_id_endpoint(list_id)}/memberships/add"
-        Client.do_patch(membership_endpoint, body, headers)
+        Client.do_put(membership_endpoint, body, headers)
       end
 
 
