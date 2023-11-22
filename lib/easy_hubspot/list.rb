@@ -2,7 +2,7 @@
 
 module EasyHubspot
   # class EasyHubspot::Contact
-  class Just < EasyHubspot::Base
+  class List < EasyHubspot::Base
     class << self
       LIST_ENDPOINT = 'crm/v3/lists'
 
