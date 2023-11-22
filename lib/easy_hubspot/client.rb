@@ -22,6 +22,12 @@ module EasyHubspot
         parse_response(response)
       end
 
+      def do_put(path = nil, body = {}, headers = {})
+        response = HTTParty.put("#{EasyHubspot.configuration.base_url}#{path}", body: body, headers: headers,
+                                                                                  format: :plain)
+        parse_response(response)
+      end
+
       def do_delete(path = nil, headers = {})
         response = HTTParty.delete("#{EasyHubspot.configuration.base_url}#{path}", headers: headers,
                                                                                    format: :plain)
